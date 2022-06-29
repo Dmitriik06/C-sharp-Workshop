@@ -41,7 +41,7 @@ int[,] Fill2DArray(int[,] array, int min, int max)
 
 double[] FindAverageOfColumns(int[,] array)
 {
-    double[] AverageOfColumns = new double[array.GetLength(0)];
+    double[] AverageOfColumns = new double[array.GetLength(1)];
     int ColumnSum = 0;
     double RowsNumber = array.GetLength(0);
     for (int j = 0; j < array.GetLength(1); j++)
@@ -55,7 +55,7 @@ double[] FindAverageOfColumns(int[,] array)
     return AverageOfColumns;
 }
 
-int[,] NewArrayMxN = InitArrayMxN(5, 5);
+int[,] NewArrayMxN = InitArrayMxN(5, 3);
 
 NewArrayMxN = Fill2DArray(NewArrayMxN, 0, 10);
 
